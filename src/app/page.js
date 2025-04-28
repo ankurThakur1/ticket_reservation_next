@@ -4,13 +4,14 @@ import FlightOffers from "@/components/FlightOffers";
 import HeroSection from "@/components/HeroSection";
 import SubscribeNow from "@/components/SubscribeNow";
 import TopDestinations from "@/components/TopDestinations";
-import Image from "next/image";
-// bg-[url(/tropical_banner.jpg)]
+
+
+
 export default function Home() {
   return (
     <>
-      <div className="w-full min-h-[550px] h-full bg-center bg-cover bg-no-repeat" style={{backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.1) 5%, transparent), url("/tropical_banner.jpg")'}} >
-        <div className="lg:container mx-auto w-full min-h-[550px] h-full flex justify-center items-start pt-14">
+      <div className="hero-section w-full min-h-[550px] h-full bg-center bg-cover bg-no-repeat " style={{backgroundImage: 'linear-gradient(rgba(37, 150, 190, 0.5) 25%, transparent), url("/skybackground.jpg")'}} >
+        <div className="lg:container mx-auto w-full min-h-[550px] h-full flex justify-center items-start pt-14  relative">
           <HeroSection />
         </div>
       </div>
@@ -18,13 +19,13 @@ export default function Home() {
         <FeatureCards />
         <TopDestinations />
       </div>
-      <div className="w-full bg-gray-100 h-full py-3">
+      <div className="w-full bg-gray-100 h-full py-3 bg-center bg-cover bg-no-repeat bg-fixed" style={{backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.2) , rgba(0, 0, 0, 0.5)), url("/mountain2.jpg")'}}>
         <div className="lg:container py-8 mx-auto">
           <FlightOffers />
         </div>
       </div>
       <div className="w-full h-full py-3">
-        <div className="lg:container py-8 mx-auto">
+        <div className="max-w-[95%] sm:max-w-[94%] md:max-w-[95%] lg:container py-8 mx-auto">
           <AboutInHome />
           <SubscribeNow />
         </div>
@@ -32,3 +33,4 @@ export default function Home() {
     </>
   );
 }
+

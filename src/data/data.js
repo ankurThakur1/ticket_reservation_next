@@ -1,4 +1,4 @@
-import flightDotted from "../../public/flight-dotted.svg" 
+import flightDotted from "../../public/direct-flight.png" 
 
 const flightData = [
   {
